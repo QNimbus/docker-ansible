@@ -24,5 +24,6 @@ To make it easier to use ansible you can create bash aliases, like so:
 alias ansible='docker run -it --rm -u "$(id -u):$(id -u)" -v /etc/passwd:/etc/passwd:ro -v "${PWD}":/ansible:ro -v "${HOME}":"${HOME}" --workdir=/ansible vwnio/ansible:latest ansible'
 alias ansible-inventory='docker run -it --rm -u "$(id -u):$(id -u)" -v /etc/passwd:/etc/passwd:ro -v "${PWD}":/ansible:ro -v "${HOME}":"${HOME}" --workdir=/ansible vwnio/ansible:latest ansible-inventory'
 alias ansible-playbook='docker run -it --rm -u "$(id -u):$(id -u)" -v /etc/passwd:/etc/passwd:ro -v "${PWD}":/ansible:ro -v "${HOME}":"${HOME}" --workdir=/ansible vwnio/ansible:latest ansible-playbook'
+alias ansible-galaxy='docker run -it --rm -u "$(id -u):$(id -u)" -v /etc/passwd:/etc/passwd:ro -v "${PWD}":/ansible:ro -v "${HOME}":"${HOME}" --workdir=/ansible vwnio/ansible:latest ansible-galaxy'
 alias ansible-vault='docker run -it --rm -u "$(id -u):$(id -u)" -v /etc/passwd:/etc/passwd:ro -v "${PWD}":/ansible:ro -v "${HOME}":"${HOME}" --workdir=/ansible vwnio/ansible:latest ansible-vault'
 ```
