@@ -15,4 +15,5 @@ RUN apt-get update && \
   && rm -rf /var/lib/apt/lists/* /tmp/*/ var/tmp/*
 
 RUN pip install pip --upgrade
-RUN pip install ansible
+RUN pip install ansible jc
+RUN ansible-galaxy collection install community.general
