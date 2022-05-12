@@ -15,5 +15,5 @@ RUN apt-get update && \
   && rm -rf /var/lib/apt/lists/* /tmp/*/ var/tmp/*
 
 RUN pip install pip --upgrade
-RUN pip install ansible jc
+RUN pip install ansible jc stormssh
 RUN ansible-galaxy collection install community.general
